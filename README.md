@@ -1,6 +1,5 @@
-# ME416_Final_Project
-# EC402_Final_Project
-R2D2 - Ankle Grabber
+# ME416/EC402 Final Project
+Ankle Grabber
 
 ## Setup
 1. Clone the repository
