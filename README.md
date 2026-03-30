@@ -13,4 +13,5 @@ Ankle Grabber
 ## Notes
 - Use feature branches for each subsystem
 - Do not edit the same .slx file simultaneously
+- Use master as main (Simulink default)
 - Commit and push regularly
