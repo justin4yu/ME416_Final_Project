@@ -17,24 +17,18 @@ alpha_w = 0.7;
 % Motor Dynamics
 % Power / sampling
 Vbatt  = 12;
-Ts     = 0.01;       % Sample Time
+Ts     = 0.01;
 
 % Geometry
-r_w    = 0.034;      % Wheel radius
-Ltrack = 0.16;       % Wheel Spacing from Center
+r_w    = 0.034;      % change to your real wheel radius
+Ltrack = 0.16;       % change to your real wheel spacing
 
 % Motor model (initial guesses)
 Lm = 1e-3;           % Armature Inductance  
 Rm = 8;              % Armature Resistance
-Jm = 2e-5;           % Rotor / Equivalent Inertia
-bm = 2e-4;           % Viscous Damping Coefficient
-Ke = 0.03;           % Back-EMF Constant
-Kt = 0.03;           % Torque Constant
-
-% GUI Control Params
-v_ref_cmd  = 0.2;
-w_ref_cmd  = 0.1;
-enable_cmd = 1;
-estop_cmd  = 0;
+Jm = 2e-5;           &Back-EMF Constant
+bm = 2e-4;
+Ke = 0.03;
+Kt = 0.03;
 
 open('ME416_Autonomy_Model.slx');
