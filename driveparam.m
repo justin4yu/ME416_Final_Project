@@ -24,7 +24,7 @@ r_w    = 0.03;      % Wheel radius
 Ltrack = 0.15;       % Wheel Spacing from Center
 
 % Motor model (initial guesses)
-Lm = 1e-3;           % Armature Inductance  
+Lm = 1;           % Armature Inductance  
 Rm = 8;              % Armature Resistance
 Jm = 2e-5;           % Rotor / Equivalent Inertia
 bm = 2e-4;           % Viscous Damping Coefficient
@@ -33,7 +33,7 @@ Kt = 0.03;           % Torque Constant
 
 % GUI Control Params
 v_ref_cmd  = 0.4;
-w_ref_cmd  = 0.2;
+w_ref_cmd  = -0.3;
 enable_cmd = 1;
 estop_cmd  = 0;
 
