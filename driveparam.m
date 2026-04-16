@@ -32,8 +32,8 @@ Ke = 0.03;           % Back-EMF C   onstant
 Kt = 0.03;           % Torque Constant
 
 % GUI Control Params
-v_ref_cmd  = 0;
-w_ref_cmd  = 0.1;
+v_ref_cmd  = 0.05;
+w_ref_cmd  = 0;
 enable_cmd = 1;
 estop_cmd  = 0;
 
