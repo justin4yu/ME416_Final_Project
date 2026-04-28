@@ -11,7 +11,6 @@ L = 0.15;        % wheelbase (m)
 % Low Pass Filter
 tau = 0.05;      % cutoff frequency, 50 ms smoothing
 beta = Ts / (Ts + tau);
-
 alpha_w = 0.7;
 
 % Motor Dynamics
@@ -54,4 +53,9 @@ K_lqr_w = dlqr(Ad_w, Bd_w, Qw, Rw);
 % Reference precompensator so constant omega_ref can be tracked
 Nbar_lqr_w = (1 - Ad_w)/Bd_w + K_lqr_w;
 
-open('ME416_Autonomy_Model.slx');
+% Make sure codegen is normal C, not C++ / code-only
+% set_param('ME416_Autonomy_Model_4','GenCodeOnly','off');
+% set_param('ME416_Autonomy_Model_4','TargetLang','C');
+% set_param('ME416_Autonomy_Model_4','SystemTargetFile','ert.tlc');
+
+% Open model
