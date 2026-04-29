@@ -53,6 +53,11 @@ K_lqr_w = dlqr(Ad_w, Bd_w, Qw, Rw);
 % Reference precompensator so constant omega_ref can be tracked
 Nbar_lqr_w = (1 - Ad_w)/Bd_w + K_lqr_w;
 
+z_distance_threshold = 0.42;
+z_dist_threshold = z_distance_threshold;
+
+v_ref_chasing = 0.2;
+w_ref_searching= 0.1;
 % Make sure codegen is normal C, not C++ / code-only
 % set_param('ME416_Autonomy_Model_4','GenCodeOnly','off');
 % set_param('ME416_Autonomy_Model_4','TargetLang','C');
